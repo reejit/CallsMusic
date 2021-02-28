@@ -2,7 +2,7 @@ FROM debian:latest
 
 RUN apt update && apt upgrade -y
 RUN apt install git curl python3-pip ffmpeg -y
-RUN pip3 install -U pip
+RUN pip install -U pip
 RUN curl -sL https://deb.nodesource.com/setup_15.x | bash -
 RUN apt-get install -y nodejs
 RUN npm i -g npm
@@ -15,8 +15,8 @@ RUN git clone https://github.com/pytgcalls/pytgcalls && \
     cd pytgcalls/js && \
     npm install && \
     cd ../../ && \
-    pip3 install -r requirements.txt && \
+    pip install -r requirements.txt && \
     cd ../
 COPY . /app/
-RUN pip3 install -r requirements.txt
-CMD python3 main.py
+RUN pip install -r requirements.txt
+CMD python main.py

@@ -8,7 +8,7 @@ RUN apt-get update -y && \
         python3-pip \
         git \
         ffmpeg && \
-    git clone https://github.com/suprojects/CallsMusic.git && \
+    git clone https://github.com/reejit/CallsMusic.git && \
     cd CallsMusic && \
     git clone https://github.com/pytgcalls/pytgcalls.git && \
     cd pytgcalls/ && \

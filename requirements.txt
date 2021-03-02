@@ -2,5 +2,5 @@ pyrogram
 TgCrypto
 python-dotenv
 youtube_dl
-ffmpeg-python
+aiohttp
 youtube_search_python

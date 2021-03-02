@@ -2,4 +2,5 @@ pyrogram
 TgCrypto
 python-dotenv
 youtube_dl
+asyncio
 youtube_search_python

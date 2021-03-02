@@ -1,6 +1,12 @@
 from pyrogram import Client as Bot
 import uvicorn
 
+@app.get('/')
+return {
+        'response': {Fuck you            
+        }
+    }
+
 from tgcalls import run
 from config import API_ID, API_HASH, BOT_TOKEN
 

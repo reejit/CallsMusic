@@ -1,13 +1,14 @@
 from pyrogram.raw.functions.channels import GetFullChannel
 from pyrogram.raw.functions.phone import LeaveGroupCall
 from pytgcalls import GroupCall
+from pyrogram import Client, filters
+from pyrogram.types import Message
 
 VOICE_CHATS = {}
 
-@Client.on_message(filters.text
-                   & filters.outgoing
-                   & ~filters.edited
-                   & filters.regex("^!join_vc$"))
+@Client.on_message(filters.command("join")
+    & filters.group
+    & ~ filters.edited
 async def join_voice_chat(client, message: Message):
     if message.chat.id in VOICE_CHATS:
         await message.edit_text("`[userbot]`: already joined")
@@ -18,10 +19,9 @@ async def join_voice_chat(client, message: Message):
     VOICE_CHATS[chat_id] = group_call
     await message.edit_text("`[userbot]`: Joined Voice Chat")
 
-@Client.on_message(filters.text
-                   & filters.outgoing
-                   & ~filters.edited
-                   & filters.regex("^!leave_vc$"))
+@Client.on_message(filters.command("leave")
+    & filters.group
+    & ~ filters.edited
 async def leave_voice_chat(client, message: Message):
     chat_id = message.chat.id
     await leave_group_call(client, chat_id)

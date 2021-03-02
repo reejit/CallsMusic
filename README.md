@@ -2,7 +2,7 @@
 
 ## Note
 
-Neither this, or PyTgCalls are stable.
+Neither this, or PyTgCalls are fully stable.
 
 ## Requirements
 
@@ -38,6 +38,10 @@ Copy `example.env` to `.env` and fill it with your credentials.
    ```bash
    docker run --env-file .env musicplayer
    ```
+
+### Heroku
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/suprojects/CallsMusicHeroku/)
+
 
 ## Credits
 

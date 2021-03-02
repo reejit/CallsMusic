@@ -1,6 +1,7 @@
 from pyrogram.raw.functions.channels import GetFullChannel
 from pyrogram.raw.functions.phone import LeaveGroupCall
 from pytgcalls import GroupCall
+import asyncio
 from pyrogram import Client, filters
 from pyrogram.types import Message
 

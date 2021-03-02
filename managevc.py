@@ -4,6 +4,7 @@ from pytgcalls import GroupCall
 from pyrogram import Client, filters
 from pyrogram.types import Message
 
+INPUT_FILENAME = '/bot/downloads/input.raw'
 VOICE_CHATS = {}
 
 @Client.on_message(filters.command("join")

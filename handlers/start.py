@@ -38,6 +38,7 @@ Use the buttons below to know more about me.""",
     filters.command("start")
     & filters.group
     & ~ filters.edited
+    & ~ filters.me
 )
 async def start(client: Client, message: Message):
     await message.reply_text(

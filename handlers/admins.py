@@ -11,6 +11,7 @@ from helpers.wrappers import errors, admins_only
     filters.command("pause")
     & filters.group
     & ~ filters.edited
+    & ~ filters.me
 )
 @errors
 @admins_only

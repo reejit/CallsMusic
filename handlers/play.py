@@ -14,6 +14,7 @@ from helpers.errors import DurationLimitError
     filters.command("play")
     & filters.group
     & ~ filters.edited
+    & ~ filters.me
 )
 @errors
 async def play(client: Client, message_: Message):

@@ -21,7 +21,7 @@ Copy `example.env` to `.env` and fill it with your credentials.
 
 1. Install Python requirements:
    ```bash
-   pip install -r requirements.txt
+   pip install -r requirements.tx
    ```
 2. Run:
    ```bash

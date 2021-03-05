@@ -28,21 +28,6 @@ Copy `example.env` to `.env` and fill it with your credentials.
    python main.py
    ```
 
-### Using Docker
-
-1. Build:
-   ```bash
-   docker build -t musicplayer .
-   ```
-2. Run:
-   ```bash
-   docker run --env-file .env musicplayer
-   ```
-
-### Heroku
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/suprojects/CallsMusicHeroku/)
-
-
 ## Credits
 
 - [Roj](https://github.com/rojserbest): main developer
